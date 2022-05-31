@@ -6,8 +6,10 @@ public class WithdrawCommand implements Command{
     double amount;
     String accountNum;
 
-    public WithdrawCommand(AccountService accountService){
+    public WithdrawCommand(AccountService accountService,double amount,String accountNum){
         this.accountService=accountService;
+        this.accountNum=accountNum;
+        this.amount=amount;
     }
     @Override
     public void execute() {

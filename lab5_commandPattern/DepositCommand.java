@@ -5,8 +5,10 @@ public class DepositCommand implements Command{
     double amount;
     String accountNum;
 
-    public DepositCommand(AccountService accountService){
+    public DepositCommand(AccountService accountService,double amount, String accountNum ){
         this.accountService=accountService;
+        this.amount=amount;
+        this.accountNum=accountNum;
     }
 
     @Override

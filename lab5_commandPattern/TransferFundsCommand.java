@@ -8,8 +8,12 @@ public class TransferFundsCommand implements Command{
     String toAccNum;
     String description;
 
-    public TransferFundsCommand(AccountService accountService){
+    public TransferFundsCommand(AccountService accountService, double amount,String accountNum,String toAccNum,String description){
         this.accountService=accountService;
+        this.description=description;
+        this.accountNum=accountNum;
+        this.amount=amount;
+        this.toAccNum=toAccNum;
     }
 
     @Override

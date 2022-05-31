@@ -5,15 +5,16 @@ public class Invoker {
     Command[] commands;
     Command lastCommand;
 
-    public void Invoker() {
+    public Invoker() {
 
         commands = new Command[3];
         Command noCommand = new NoCommand();
-        lastCommand = noCommand;
 
         for(int i=0;i<3;i++) {
             commands[i] = noCommand;
         }
+
+        lastCommand = noCommand;
     }
 
     public void setCommand(int slot, Command command) {
