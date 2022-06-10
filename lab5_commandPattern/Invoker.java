@@ -34,13 +34,4 @@ public class Invoker {
         lastCommand.redo();
     }
 
-    public String toString() {
-        StringBuffer stringBuff = new StringBuffer();
-        stringBuff.append("\n-------------\n");
-        for (int i = 0; i < commands.length; i++) {
-            stringBuff.append("[slot " + i + "] " + commands[i].getClass().getSimpleName());
-        }
-        stringBuff.append("[undo] " + lastCommand.getClass().getSimpleName() + "\n");
-        return stringBuff.toString();
-    }
 }

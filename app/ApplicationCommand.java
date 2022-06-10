@@ -60,7 +60,7 @@ public class ApplicationCommand {
 		invoker.undoButtonPushed();
 //		invoker.undoButtonPushed();
 //		invoker.buttonPushed(1);
-//		invoker.redoButtonPushed();
+		invoker.redoButtonPushed();
 //		invoker.undoButtonPushed();
 //		invoker.buttonPushed(2);
 //		invoker.undoButtonPushed();
